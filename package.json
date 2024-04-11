@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Node.js example server starter project",
   "license": "MIT",
-  "main": "index.ts",
+  "main": "project/app.js",
   "scripts": {
-    "start": "nodemon index.ts"
+    "start": "nodemon project/app.js"
   },
   "keywords": [],
   "author": "Ives van Hoorne",
@@ -18,5 +18,6 @@
   },
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "type": "module"
 }
