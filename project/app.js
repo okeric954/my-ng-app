@@ -8,8 +8,9 @@ const port = process.env.PORT || 3000;
 
 // Configure static directory for serving CSS, JS, images, etc.
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "src/views")));
 app.use(express.static(path.join(__dirname, "bower_components")));
+
+app.set("views", "./src/views");
 
 // Define routes
 app.get("/", (req, res) => {
